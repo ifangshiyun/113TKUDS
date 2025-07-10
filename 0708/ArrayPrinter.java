@@ -9,7 +9,7 @@ public class ArrayPrinter {
      * Mimics the functionality of Arrays.toString()
      * This method demonstrates how to access array elements sequentially by index
      */
-    static String arrayToString(int[] array) {
+    public static String arrayToString(int[] array) {
         // Handle special cases of empty arrays
         if (array == null) {
             return "null";

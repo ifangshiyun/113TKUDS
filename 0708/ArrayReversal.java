@@ -9,7 +9,7 @@ public class ArrayReversal {
      * Time complexity: O(n/2) = O(n)
      * Space complexity: O(1) - only uses fixed extra space
      */
-    static void reverseInPlace(int[] array) {
+    public static void reverseInPlace(int[] array) {
         int left = 0;                    // 左指標，從陣列開頭開始 Left index, starting from the beginning of the array
         int right = array.length - 1;   // 右指標，從陣列結尾開始 Right index, starting from the end of the array
         int swapCount = 0;               // 計算交換次數 Calculate the number of exchanges
