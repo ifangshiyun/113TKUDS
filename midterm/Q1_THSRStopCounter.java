@@ -4,11 +4,11 @@ import java.util.Scanner;
 import java.util.Arrays;
 
 public class Q1_THSRStopCounter {
-    /*
-     * Time Complexity: O(n)
-     * 說明：需遍歷停靠站陣列一次來尋找起點與終點索引，故為線性時間。
-     */
-
+/*
+ * 高鐵區間停靠統計 Time Complexity: O(n)
+ * 說明：需遍歷一次陣列以尋找起點與終點站的索引位置（最多各一次），
+ * 總共最多走訪 n 次站點資料，因此時間複雜度為 O(n)。
+ */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

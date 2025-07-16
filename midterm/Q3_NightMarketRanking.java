@@ -3,10 +3,12 @@ package midterm;
 import java.util.Scanner;
 
 public class Q3_NightMarketRanking {
-    /*
-     * Time Complexity: O(n^2)
-     * 說明：使用選擇排序，每輪需在剩餘陣列中尋找最大值並交換位置，總共比較次數為 n(n-1)/2。
-     */
+/*
+ * 夜市攤位人氣排名（選擇排序）Time Complexity: O(n²)
+ * 說明：使用選擇排序，由外層迴圈控制選取位置，內層找出最大值，總共比較次數為 (n-1)+(n-2)+...+1 = n(n-1)/2，
+ * 故最壞情況下時間複雜度為 O(n²)。
+ */
+
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

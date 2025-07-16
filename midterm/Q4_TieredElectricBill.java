@@ -3,10 +3,12 @@ package midterm;
 import java.util.Scanner;
 
 public class Q4_TieredElectricBill {
-    /*
-     * Time Complexity: O(n)
-     * 說明：每一位住戶的電費計算皆為固定段數處理，不依賴其他輸入，總共處理 n 筆資料，因此為 O(n)。
-     */
+/*
+ * 分段電價帳單試算 Time Complexity: O(n)
+ * 說明：每一位住戶皆需計算一次電費，電費計算為固定最多 6 段的 if 條件，與輸出操作皆為 O(1)，
+ * 處理 n 筆資料，總時間複雜度為 O(n)。
+ */
+
 
     // 計算單一使用量的電費
     public static int calc(int kWh) {

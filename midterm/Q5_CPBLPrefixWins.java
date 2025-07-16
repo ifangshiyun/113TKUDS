@@ -3,10 +3,11 @@ package midterm;
 import java.util.Scanner;
 
 public class Q5_CPBLPrefixWins {
-    /*
-     * Time Complexity: O(n)
-     * 說明：先建立長度為 n 的 prefix sum 陣列，接著輸出前 k 筆資料，整體操作為一次走訪，因此為 O(n)。
-     */
+/*
+ * 職棒戰績前綴勝場 Time Complexity: O(n)
+ * 說明：先建立 prefix sum 陣列，需走訪原始資料一次，再輸出前 k 筆結果，合併為一次線性走訪，
+ * 因此總時間複雜度為 O(n)。
+ */
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

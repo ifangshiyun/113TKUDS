@@ -3,10 +3,12 @@ package midterm;
 import java.util.*;
 
 public class Q2_NextTHSRDeparture {
-    /*
-     * Time Complexity: O(log n)
-     * 說明：使用二分搜尋法找尋第一個大於查詢時間的班次，因此時間複雜度為 O(log n)。
-     */
+/*
+ * 下一班高鐵開車時間 Time Complexity: O(log n)
+ * 說明：將時間轉為分鐘後，使用二分搜尋尋找第一個大於查詢時間的時刻，
+ * 搜尋範圍每次縮半，故時間複雜度為 O(log n)。
+ */
+
 
     // 將 HH:mm 字串轉成總分鐘數
     public static int timeToMinutes(String time) {
